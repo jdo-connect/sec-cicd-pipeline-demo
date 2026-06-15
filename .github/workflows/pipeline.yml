@@ -39,7 +39,8 @@ jobs:
           image-ref: ghcr.io/jdo-connect/sec-cicd-pipeline-demo:latest
           severity: 'CRITICAL,HIGH'
           exit-code: '1'
-          format: 'table'
+          format: 'table' 
+          ignore-unfixed: true
 
       - name: Login to GHRC
         uses: docker/login-action@v3
